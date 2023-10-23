@@ -8,13 +8,10 @@
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "typescript": "^5.2.2",
     "tsup": "^7.2.0",
     "@ignite-ui/ts-config": "*"
   },
-  "description": ""
 }
