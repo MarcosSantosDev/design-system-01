@@ -20,5 +20,5 @@ export const CustomTag: StoryObj<HeadingProps> = {
   args: {
     as: "h1",
     children: "H1 heading",
-  }
+  },
 };
