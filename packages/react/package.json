@@ -6,9 +6,9 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/components/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/components/index.tsx --format esm,cjs --dts --external react --watch",
-    "lint": "eslint ./src/**/*.ts* --fix"
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react --external react-dom",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --external react-dom --watch",
+    "lint": "eslint src/**/*.ts* --fix"
   },
   "license": "MIT",
   "devDependencies": {
