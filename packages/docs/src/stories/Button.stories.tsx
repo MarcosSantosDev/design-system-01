@@ -8,10 +8,32 @@ export default {
   tags: ["autodocs"],
   args: {
     children: 'Label',
+    variant: 'primary',
+    size: 'md',
     disabled: false
   },
   argTypes: {
+    children: {
+      control: {
+        type: null
+      }
+    },
+    variant: {
+      description: 'Button variant',
+      options: [
+        'primary',
+        'secondary',
+        'tertiary',
+      ],
+      control: 'inline-radio',
+    },
+    size: {
+      description: 'Button size',
+      options: ['sm', 'md'],
+      control: 'inline-radio',
+    },
     disabled: {
+      description: 'Disable element',
       type: 'boolean'
     }
   }

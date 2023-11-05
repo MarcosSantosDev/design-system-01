@@ -19,6 +19,9 @@ export const Heading = styled("h2", {
       "6xl": { fontSize: "$9xl" },
     },
   },
+  defaultVariants: {
+    size: 'md'
+  }
 });
 
 export type HeadingProps = ComponentProps<typeof Heading> & {

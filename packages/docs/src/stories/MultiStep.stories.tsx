@@ -9,6 +9,24 @@ export default {
     size: 4,
     currentStep: 1,
   },
+  argTypes: {
+    size: {
+      description: 'Count steps',
+      control: {
+        type: 'number',
+        min: 0,
+        step: 1,
+      },
+    },
+    currentStep: {
+      description: 'Current step',
+      control: {
+        type: 'number',
+        min: 1,
+        step: 1,
+      },
+    },
+  },
   decorators: [
     (Story) => {
       return (

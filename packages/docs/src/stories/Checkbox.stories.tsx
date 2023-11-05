@@ -10,6 +10,7 @@ export default {
   },
   argTypes: {
     disabled: {
+      description: 'Disable element',
       type: 'boolean'
     }
   },
