@@ -9,5 +9,5 @@
 - [X] TextInput
 - [X] TextArea
 - [X] Avatar
-- [ ] Checkbox
-- [ ] MultiStep
+- [X] Checkbox
+- [X] MultiStep
