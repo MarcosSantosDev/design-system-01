@@ -38,6 +38,7 @@ const config = {
     if (configType === 'PRODUCTION') {
       config.base = '/design-system-01/'
     }
+    return config
   }
 };
 export default config;
