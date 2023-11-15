@@ -1,6 +1,6 @@
 import { getContrast } from "polished";
 
-import { colors } from "@ignite-ui/tokens";
+import { colors } from "@ignite-ui-marcossantosdev/tokens";
 
 export const ColorsGrid = () => {
   return Object.entries(colors).map(([key, color]) => {
