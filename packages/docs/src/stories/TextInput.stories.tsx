@@ -37,6 +37,7 @@ export const Primary = {
 
 export const WithPrefix = {
   args: {
-    prefix: 'github.com/'
+    prefix: 'github.com/',
+    placeholder: 'your-username'
   }
 } as StoryObj<TextInputProps>;

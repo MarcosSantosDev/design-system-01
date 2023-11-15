@@ -27,14 +27,14 @@ export const CheckboxContainer = styled(Checkbox.Root, {
     cursor: 'not-allowed'
   },
 
-  '&:focus': {
+  '&:focus, &[data-state="checked"]': {
     border: '2px solid $ignite300'
   },
 
   transition: 'background 200ms linear'
 })
 
-const fadeIn = keyframes({
+const slideIn = keyframes({
   from: {
     transform: 'translateY(-100%)'
   },
@@ -43,7 +43,7 @@ const fadeIn = keyframes({
   },
 });
 
-const fadeOut = keyframes({
+const slideOut = keyframes({
   from: {
     transform: 'translateY(0)'
   },
@@ -58,10 +58,10 @@ export const CheckboxIndicator = styled(Checkbox.Indicator, {
   height: '$4',
 
   '&[data-state="checked"]': {
-    animation: `${fadeIn} 200ms ease-in`
+    animation: `${slideIn} 200ms ease-in`
   },
   
   '&[data-state="unchecked"]': {
-    animation: `${fadeOut} 200ms ease-out`
+    animation: `${slideOut} 200ms ease-out`
   },
 })
